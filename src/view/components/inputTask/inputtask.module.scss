@@ -1,0 +1,71 @@
+.InputTask{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  background: #DBE2EF;
+  border-radius: 5px;
+  padding-right: 15px;
+  margin-left: 20px;
+
+  .inputTaskLabel{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 12px 15px;
+  }
+
+  .inputTaskCheck{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: #ccc;
+  }
+
+  .inputTaskTitle{
+      padding: 5px;
+      line-height: 1.2;
+  }
+  .inputTaskEditTitle{
+    width: 300px;
+    border: none;
+    padding: 5px;
+    background: none;
+    box-shadow: 0 4px 0 -3px #3f72af;
+  }
+
+  .inputTaskTwoBrn{
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    transition: opacity 0.3s;
+
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+
+  .inputTaskEdit {
+    background-image: url("../../../assets/icons/edit.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+  }
+
+  .inputTaskRemove{
+    background-image: url("../../../assets/icons/trash.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+  }
+  .inputTaskSave{
+    background-image: url("../../../assets/icons/check.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+  }
+
+}

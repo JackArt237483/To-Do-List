@@ -1,5 +1,4 @@
 import {create} from "zustand"
-
 import { generateId } from "../helper";
 
 // здесь ты создаешь описание типов данных которые ты будешь тспользовать
@@ -17,17 +16,11 @@ interface ToDoStore {
    updateTask: (id: string, title: string) => void;
    removeTask: (id: string) => void
 }
-
 //то есть тут ты уже оптсываешь все что у тебя есть
 //в interface ToDoStore
 export const useToDoStore = create<ToDoStore>((set, get) => ({
   // при помощи get мы получаем данные о текущей информации в нашем сторе
   tasks: [
-    {
-      id: "Some me",
-      title: "Artem is the bet",
-      createAt: 1212
-    }
   ],
   createTask: (title) => {
     const {tasks} = get()
